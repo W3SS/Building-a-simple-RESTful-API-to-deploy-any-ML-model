@@ -1,9 +1,7 @@
-#{'x':2,'y':5,'z':4,'details':{'info':6}}
+
 import cherrypy
 from paste.translogger import TransLogger
 from app import create_app
-#import app
-
 
 def run_server(app):
 
@@ -28,13 +26,8 @@ def run_server(app):
 
 if __name__ == "__main__":
     # Init spark context and load libraries
-    
-    
     app = create_app()
     
-    
-    
-
     # start web server
     #run_server(app)
     app.run(host='0.0.0.0',port='8777') # .24
